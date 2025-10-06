@@ -6,6 +6,23 @@ The demo implementation of Scramjet, the most advanced web proxy.
 
 Scramjet is an experimental interception based web proxy designed with security, developer friendliness, and performance in mind. This project is made to evade internet censorship and bypass arbitrary web browser restrictions.
 
+### Scramjet upstream is NOW frozen. Please do not make PRs to this repository. Refer to <a href="https://github.com/HeyPuter/browser.js">browser.js</a> where this project will now receive updates outside of just bypassing internet censorship.
+
+## Supported Sites
+
+Scramjet has CAPTCHA support! Some of the popular websites that Scramjet supports include:
+
+- [Google](https://google.com)
+- [Twitter](https://twitter.com)
+- [Instagram](https://instagram.com)
+- [Youtube](https://youtube.com)
+- [Spotify](https://spotify.com)
+- [Discord](https://discord.com)
+- [Reddit](https://reddit.com)
+- [GeForce NOW](https://play.geforcenow.com/)
+
+Ensure you are not hosting on a datacenter IP for CAPTCHAs to work reliably along with YouTube. Heavy amounts of traffic will make some sites NOT work on a single IP. Consider rotating IPs or routing through Wireguard using a project like <a href="https://github.com/whyvl/wireproxy">wireproxy</a>.
+
 ## Setup / Usage
 
 Install dependencies
