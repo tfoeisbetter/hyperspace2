@@ -9,6 +9,8 @@
 	},
 	"scripts": {
 		"start": "node src/index.js",
+		"build": "node --version && npm --version && pnpm install --frozen-lockfile",
+		"dev": "node src/index.js",
 		"format": "prettier --config .prettierrc.js --write .",
 		"lint": "eslint ./src/",
 		"lint:fix": "eslint ./src/ --fix"
