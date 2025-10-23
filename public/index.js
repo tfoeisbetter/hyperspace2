@@ -20,7 +20,7 @@ const error = document.getElementById("sj-error");
  */
 const errorCode = document.getElementById("sj-error-code");
 
-const { ScramjetController } = $scramjetLoadController();
+
 
 const scramjet = new ScramjetController({
 	files: {
@@ -29,7 +29,7 @@ const scramjet = new ScramjetController({
 		sync: '/scram/scramjet.sync.js',
 	},
 });
-
+const { ScramjetController } = $scramjetLoadController();
 scramjet.init();
 
 const connection = new BareMux.BareMuxConnection("/baremux/worker.js");
