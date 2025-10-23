@@ -1,6 +1,19 @@
 {
   "headers": [
     {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cross-Origin-Embedder-Policy",
+          "value": "credentialless"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
+        }
+      ]
+    },
+    {
       "source": "/sw.js",
       "headers": [
         {
@@ -14,23 +27,17 @@
       ]
     },
     {
-      "source": "/(.*)",
+      "source": "/scram/(.*)",
       "headers": [
         {
-          "key": "Cross-Origin-Embedder-Policy",
-          "value": "require-corp"
+          "key": "Content-Type",
+          "value": "application/javascript"
         },
         {
-          "key": "Cross-Origin-Opener-Policy",
-          "value": "same-origin"
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
         }
       ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/scramjet/:path*",
-      "destination": "/scramjet/:path*"
     }
   ]
 }
